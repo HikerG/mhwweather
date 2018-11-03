@@ -25,14 +25,9 @@ import util.NetUtil;
 
 public class MainActivity extends Activity implements View.OnClickListener {
     private ImageView mUpdateBtn;
-
     private ImageView mCirySelect;
-
-    private TextView cityTv, timeTv, humidityTv, weekTv, pmDataTv,
-            pmQualityTv,
-            temperatureTv, climateTv, windTv, city_name_Tv;
+    private TextView cityTv, timeTv, humidityTv, weekTv, pmDataTv, pmQualityTv, temperatureTv, climateTv, windTv, city_name_Tv;
     private ImageView weatherImg, pmImg;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
