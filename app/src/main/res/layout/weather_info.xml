@@ -8,7 +8,7 @@
         android:id="@+id/title"
         android:layout_width="match_parent"
         android:layout_height="45.0dp"
-        android:background="#ffcd2626"
+        android:background="@drawable/mhwbar"
         android:orientation="horizontal">
 
         <ImageView
@@ -23,7 +23,7 @@
             android:layout_width="1.0dp"
             android:layout_height="40dp"
             android:layout_gravity="center_vertical"
-            android:background="#A71717"/>
+            android:background="#FCFCFC"/>
 
         <TextView
             android:id="@+id/title_city_name"
@@ -36,14 +36,14 @@
             android:textColor="#ffffffff"
             android:textSize="22.0sp"/>
 
-
+        <!--定位按钮-->
         <ImageView
             android:id="@+id/title_location"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:src="@drawable/base_action_bar_action_city"/>
-
+        <!--分享按钮-->
         <ImageView
             android:id="@+id/title_share"
             android:layout_width="0dp"
@@ -51,12 +51,32 @@
             android:layout_weight="1"
             android:src="@drawable/title_share"/>
 
-        <ImageView
-            android:id="@+id/title_update_btn"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:src="@drawable/title_update"/>
+
+
+        <!--刷新按钮-->
+        <FrameLayout
+            android:id="@+id/title_update"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center">
+            <!--静态图片-->
+            <ImageView
+                android:id="@+id/title_update_btn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/title_update"/>
+            <!--旋转效果-->
+            <ProgressBar
+                android:id="@+id/title_update_progress"
+                android:visibility="gone"
+                android:indeterminate="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/title_update_progressbar_style"
+                />
+        </FrameLayout>
     </LinearLayout>
 
 
@@ -193,6 +213,7 @@
 
             <!--today weather block-->
             <RelativeLayout
+                android:id="@+id/weather_current"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
@@ -233,7 +254,7 @@
                     android:layout_toRightOf="@+id/weather_imgandtemp"
                     android:layout_marginLeft="10dp">
 
-                    <!--today week-->
+                    <!--当天日期-->
                     <TextView
                         android:id="@+id/week_today"
                         android:layout_width="wrap_content"
@@ -245,7 +266,7 @@
                         android:textSize="20sp"
                         android:textColor="@android:color/white"/>
 
-                    <!--today temp-->
+                    <!--今日温度-->
                     <TextView
                         android:id="@+id/temperature"
                         android:layout_width="wrap_content"
@@ -257,7 +278,7 @@
                         android:textSize="20sp"
                         android:textColor="@android:color/white"/>
 
-                    <!--today climate-->
+                    <!--今日天气-->
                     <TextView
                         android:id="@+id/climate"
                         android:layout_width="wrap_content"
