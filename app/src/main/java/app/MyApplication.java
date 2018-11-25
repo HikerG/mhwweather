@@ -4,6 +4,9 @@ import android.app.Application;
 import android.os.Environment;
 import android.util.Log;
 
+import com.baidu.mapapi.CoordType;
+import com.baidu.mapapi.SDKInitializer;
+
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -28,6 +31,7 @@ public class MyApplication extends Application{
         mApplication = this;
         mCityDB = openCityDB();
         initCityList();
+
     }
     private void initCityList(){
         mCityList = new ArrayList<City>();

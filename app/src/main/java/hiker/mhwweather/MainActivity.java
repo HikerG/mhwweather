@@ -16,6 +16,12 @@ import android.content.SharedPreferences;
 import android.view.View;
 import android.widget.ImageView;
 
+import com.baidu.location.BDLocation;
+import com.baidu.location.BDLocationListener;
+import com.baidu.location.LocationClient;
+import com.baidu.location.LocationClientOption;
+import com.baidu.mapapi.map.BaiduMap;
+
 import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserException;
 import org.xmlpull.v1.XmlPullParserFactory;
@@ -38,6 +44,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
     private TextView cityTv, timeTv, humidityTv, weekTv, pmDataTv, pmQualityTv, temperatureTv, climateTv, windTv, city_name_Tv;
     private ImageView weatherImg, pmImg;
     private ProgressBar mUpdateProgressBar;//动画
+
 
     //    传递消息
     private Handler mHandler=new Handler(){
@@ -435,6 +442,5 @@ public class MainActivity extends Activity implements View.OnClickListener {
             }
         }
     }
-
 
 }

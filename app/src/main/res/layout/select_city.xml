@@ -46,13 +46,11 @@
             android:layout_height="45dp"
             android:background="#DCDCDC"
             android:queryHint="请输入城市名称"/>
-        <ListView
-           android:id="@+id/title_list"
-            android:layout_below="@id/title_search"
-            android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
-            android:background="@drawable/bluebeijing">
-        </ListView>
-
+            <ListView
+                android:id="@+id/title_list"
+                android:layout_below="@id/title_search"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:background="@drawable/bluebeijing"/>
     </RelativeLayout>
 </RelativeLayout>

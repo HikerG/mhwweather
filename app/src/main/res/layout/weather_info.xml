@@ -63,9 +63,8 @@
             <!--静态图片-->
             <ImageView
                 android:id="@+id/title_update_btn"
-                android:layout_width="0dp"
+                android:layout_width="45dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
                 android:src="@drawable/title_update"/>
             <!--旋转效果-->
             <ProgressBar

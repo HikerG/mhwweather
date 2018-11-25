@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/page3">
+
+    <Button
+        android:id="@+id/startBtn"
+        android:layout_width="144dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:text="点击进入程序-->" />
+</RelativeLayout>
